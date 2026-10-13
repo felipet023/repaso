@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, Lock, UserPlus } from 'lucide-react';
-import * as authService from '../services/auth.service';
 import ErrorBox from '../components/ErrorBox';
 import { isEmail, passwordErrors, required } from '../utils/validators';
 import { useAuth } from '../hooks/useAuth';
@@ -12,6 +11,7 @@ export default function RegisterPage() {
 
   const [form, setForm] = useState({ nombre: '', email: '', password: '', confirmarPassword: '' });
   const [errores, setErrores] = useState({});
+  const [aceptoTerminos, setAceptoTerminos] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [enviando, setEnviando] = useState(false);
   const [error, setError] = useState('');
@@ -29,6 +29,7 @@ export default function RegisterPage() {
     const passErrors = passwordErrors(form.password);
     if (passErrors.length) e.password = `Debe tener: ${passErrors.join(', ')}`;
     if (form.password !== form.confirmarPassword) e.confirmarPassword = 'Las contraseñas no coinciden';
+    if (!aceptoTerminos) e.terminos = 'Debes aceptar los términos y condiciones';
     setErrores(e);
     return Object.keys(e).length === 0;
   }
@@ -40,7 +41,12 @@ export default function RegisterPage() {
     setEnviando(true);
     try {
       // El backend devuelve token: el registro deja la sesión iniciada
-      await register({ nombre: form.nombre, email: form.email, password: form.password });
+      await register({
+        nombre: form.nombre,
+        email: form.email,
+        password: form.password,
+        confirmarPassword: form.confirmarPassword
+      });
       navigate(isAdmin ? '/admin' : '/', { replace: true });
     } catch (err) {
       setError(err.message);
@@ -69,7 +75,7 @@ export default function RegisterPage() {
           <input name="email" type="email" placeholder="Correo electrónico" value={form.email} onChange={change} autoComplete="email" required />
           {errores.email && <span className="field-error">{errores.email}</span>}
         </div>
-        <div className="field field-plain">
+        <div className="field">
           <Lock size={16} />
           <input
             name="password"
@@ -94,11 +100,27 @@ export default function RegisterPage() {
         </ul>
         {errores.password && <span className="field-error">{errores.password}</span>}
 
-        <div className="field field-plain">
+        <div className="field">
           <Lock size={16} />
           <input name="confirmarPassword" type={showPassword ? 'text' : 'password'} placeholder="Confirmar contraseña" value={form.confirmarPassword} onChange={change} autoComplete="new-password" required />
         </div>
         {errores.confirmarPassword && <span className="field-error">{errores.confirmarPassword}</span>}
+
+        <label className="terms-check">
+          <input
+            type="checkbox"
+            name="aceptoTerminos"
+            checked={aceptoTerminos}
+            onChange={(event) => {
+              setAceptoTerminos(event.target.checked);
+              setErrores((actual) => ({ ...actual, terminos: '' }));
+            }}
+          />
+          <span>
+            Acepto los <Link to="/terminos" target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}>Términos y Condiciones</Link> de la página web
+          </span>
+        </label>
+        {errores.terminos && <span className="field-error">{errores.terminos}</span>}
 
         <button type="submit" className="btn-primary" disabled={enviando}>
           <UserPlus size={16} /> {enviando ? 'Creando cuenta…' : 'Registrarme'}

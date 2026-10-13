@@ -14,6 +14,7 @@ import AboutPage from './pages/AboutPage';
 import WorkshopPage from './pages/WorkshopPage';
 import AppointmentPage from './pages/AppointmentPage';
 import ContactPage from './pages/ContactPage';
+import TermsPage from './pages/TermsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
@@ -46,6 +47,7 @@ export default function App() {
                 <Route path="/nosotros" element={<AboutPage />} />
                 <Route path="/taller" element={<WorkshopPage />} />
                 <Route path="/contacto" element={<ContactPage />} />
+                <Route path="/terminos" element={<TermsPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/registro" element={<RegisterPage />} />
                 <Route path="/recuperar-contrasena" element={<ForgotPasswordPage />} />

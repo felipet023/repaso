@@ -70,7 +70,7 @@ export default function ResetPasswordPage() {
           {errores.token && <span className="field-error">{errores.token}</span>}
         </div>
 
-        <div className="field field-plain">
+        <div className="field">
           <Lock size={16} />
           <input
             name="password"
@@ -88,7 +88,7 @@ export default function ResetPasswordPage() {
         </div>
         {errores.password && <span className="field-error">{errores.password}</span>}
 
-        <div className="field field-plain">
+        <div className="field">
           <Lock size={16} />
           <input name="confirmarPassword" type={showPassword ? 'text' : 'password'} placeholder="Confirmar nueva contraseña" value={form.confirmarPassword} onChange={change} autoComplete="new-password" disabled={Boolean(exito)} />
         </div>

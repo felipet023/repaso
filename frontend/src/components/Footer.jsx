@@ -23,6 +23,10 @@ export default function Footer() {
           <Link to="/mis-pedidos">Mis pedidos</Link>
           <Link to="/carrito">Carrito</Link>
         </div>
+        <div className="footer-col">
+          <h4>Legal</h4>
+          <Link to="/terminos">Términos y Condiciones</Link>
+        </div>
       </div>
       <div className="footer-bottom">
         <p>© 2026 TUKI BIKES — Proyecto académico. Pagos y usuarios simulados.</p>

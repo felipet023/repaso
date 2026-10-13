@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, LayoutGrid, Lock, LogIn, Mail } from 'lucide-react';
-import * as authService from '../services/auth.service';
 import ErrorBox from '../components/ErrorBox';
 import { useAuth } from '../hooks/useAuth';
 
