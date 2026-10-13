@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Kit de Protección MTB Pro">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2020"/>
+      <stop offset="1" stop-color="#090a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="400" cy="310" r="215" fill="none" stroke="#ff5c5c" stroke-opacity=".14" stroke-width="2"/>
+  <rect x="250" y="180" width="300" height="260" rx="24" fill="none" stroke="#ff5c5c" stroke-width="14"/>
+  <rect x="250" y="290" width="300" height="22" fill="#ff5c5c" opacity=".85"/>
+  <circle cx="330" cy="240" r="34" fill="none" stroke="#ff5c5c" stroke-width="12"/>
+  <circle cx="470" cy="240" r="34" fill="none" stroke="#ff5c5c" stroke-width="12"/>
+  <path d="M360 360 L440 360" stroke="#ff5c5c" stroke-width="12" stroke-linecap="round"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#f5f7f4" letter-spacing="3">TUKI</text>
+  <text x="400" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#9ba19d" letter-spacing="6">KIT PROTECCIÓN MTB PRO</text>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="10" fill="#b7ff2a">TUKI BIKES</text>
+</svg>

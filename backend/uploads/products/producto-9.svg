@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Giro Aether MIPS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2020"/>
+      <stop offset="1" stop-color="#090a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="400" cy="310" r="215" fill="none" stroke="#7aa2ff" stroke-opacity=".14" stroke-width="2"/>
+  <path d="M230 340 C230 210 310 150 400 150 C490 150 570 210 570 340 L570 360 C570 380 550 390 400 390 C250 390 230 380 230 360 Z"
+        fill="none" stroke="#7aa2ff" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M300 250 C330 210 370 200 400 200" fill="none" stroke="#7aa2ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M430 200 C470 205 500 225 515 255" fill="none" stroke="#7aa2ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 340 L570 340" stroke="#7aa2ff" stroke-width="10"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#f5f7f4" letter-spacing="4">GIRO</text>
+  <text x="400" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#9ba19d" letter-spacing="8">AETHER MIPS</text>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="10" fill="#b7ff2a">TUKI BIKES</text>
+</svg>

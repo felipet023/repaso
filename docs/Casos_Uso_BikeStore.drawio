@@ -1,0 +1,325 @@
+<mxfile host="app.diagrams.net" agent="Manus" pages="7">
+  <diagram id="05_Productos" name="Administración de productos">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Administración de productos" vertex="1">
+          <mxGeometry height="40" width="1000" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Administración de productos" vertex="1">
+          <mxGeometry height="380" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="50" x="70" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-17: Registrando productos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-17" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-18: Actualizando precios y existencias" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-18" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-19: Inactivando productos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-19" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-20: Consultando, buscando y filtrando productos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-20" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="incCU-18" edge="1" parent="1" source="useCU-18" style="dashed=1;endArrow=open;html=1;rounded=0;" target="useCU-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="07_Seguridad" name="Administración y seguridad">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Administración y seguridad" vertex="1">
+          <mxGeometry height="40" width="1000" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Administración y seguridad" vertex="1">
+          <mxGeometry height="380" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="40" x="40" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="actor1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuario Autenticado" vertex="1">
+          <mxGeometry height="60" width="40" x="970" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-27: Consultando listado de usuarios" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-27" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="useCU-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-28: Asignando roles a usuarios" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-28" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;entryX=0.057;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="useCU-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-29: Activando o desactivando cuentas" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-29" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-30: Controlando acceso según el rol" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-30" edge="1" parent="1" source="actor1" style="endArrow=none;html=1;rounded=0;" target="useCU-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-31: Buscando usuarios en el panel administrativo" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-31" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="useCU-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="02_Carrito" name="Carrito de compras">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Carrito de compras" vertex="1">
+          <mxGeometry height="40" width="1000" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Carrito de compras" vertex="1">
+          <mxGeometry height="380" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Cliente" vertex="1">
+          <mxGeometry height="60" width="60" x="60" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="actor1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Cliente registrado" vertex="1">
+          <mxGeometry height="60" width="50" x="100" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-05" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-05: Agregando productos al carrito" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-05" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-06" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-06: Consultando productos y valores del carrito" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-06" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-07" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-07: Modificando cantidades del carrito" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-07" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-07">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-08" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-08: Recuperando carrito asociado" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-08" edge="1" parent="1" source="actor1" style="endArrow=none;html=1;rounded=0;" target="useCU-08">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="03_Compras" name="Gestión de compras y pagos">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Gestión de compras y pagos" vertex="1">
+          <mxGeometry height="40" width="1000" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Gestión de compras y pagos" vertex="1">
+          <mxGeometry height="380" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Cliente registrado" vertex="1">
+          <mxGeometry height="60" width="50" x="90" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="actor1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="50" x="1020" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-09" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-09: Consultando resumen del pedido" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-09" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-09">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-10: Generando número único de pedido" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-10" edge="1" parent="1" source="actor1" style="endArrow=none;html=1;rounded=0;" target="useCU-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-11: Realizando pago simulado" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-11" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-12: Confirmando pago procesado" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-12" edge="1" parent="1" source="actor1" style="endArrow=none;html=1;rounded=0;" target="useCU-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="04_Usuarios" name="Gestión de usuarios">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Gestión de usuarios" vertex="1">
+          <mxGeometry height="40" width="1000" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Gestión de usuarios" vertex="1">
+          <mxGeometry height="380" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="70" x="970" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="actor1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuario registrado" vertex="1">
+          <mxGeometry height="60" width="50" x="90" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="actor2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Visitante" vertex="1">
+          <mxGeometry height="60" width="50" x="60" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-13: Registrando cuenta de cliente" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-13" edge="1" parent="1" source="actor2" style="endArrow=none;html=1;rounded=0;" target="useCU-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-14: Validando correo electrónico" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-14" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-15: Iniciando sesión" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-15" edge="1" parent="1" source="actor1" style="endArrow=none;html=1;rounded=0;" target="useCU-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-16: Recuperando contraseña" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-16" edge="1" parent="1" source="actor1" style="endArrow=none;html=1;rounded=0;" target="useCU-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="01_Catalogo" name="Gestión del catálogo">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Gestión del catálogo" vertex="1">
+          <mxGeometry height="40" width="1000" x="85" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Gestión del catálogo" vertex="1">
+          <mxGeometry height="380" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Visitante" vertex="1">
+          <mxGeometry height="48" width="50" x="40" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-01" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-01: Consultando catálogo de productos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-01" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-02" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-02: Mostrando información de productos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-02" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-03" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-03: Filtrando productos por categoría" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-03" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-04" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-04: Ordenando productos por precio" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-04" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="06_Informes" name="Tablero de control e informes">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Tablero de control e informes" vertex="1">
+          <mxGeometry height="40" width="1000" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;verticalAlign=top;spacingTop=10;" value="Sistema Bike Store Tablero de control e informes" vertex="1">
+          <mxGeometry height="420" width="700" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="50" x="50" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-21: Consultando dashboard y alertas" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-21" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-22: Consultando ventas totales" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-22" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-23: Consultando productos más vendidos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-23" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-24: Consultando cantidad de pedidos" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-24" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-25: Filtrando informes por fecha y categoría" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-25" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="useCU-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="CU-26: Exportando informes a Excel o PDF" vertex="1">
+          <mxGeometry height="48" width="420" x="360" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="assocCU-26" edge="1" parent="1" source="actor0" style="endArrow=none;html=1;rounded=0;" target="useCU-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

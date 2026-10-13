@@ -1,0 +1,27 @@
+{
+  "name": "bike-store-backend",
+  "version": "2.0.0",
+  "description": "Backend Bike Store / TUKI BIKES — API REST con Express, MySQL, JWT y roles",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.2.0",
+    "mysql2": "^3.14.3",
+    "pdfkit": "^0.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.0",
+    "vitest": "^3.2.4"
+  }
+}
